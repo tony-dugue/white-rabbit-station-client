@@ -17,17 +17,17 @@ export const appConfig: ApplicationConfig = {
         preset: definePreset(Lara, {
           semantic: {
             primary: {
-              50: '{rose.50}',
-              100: '{rose.100}',
-              200: '{rose.200}',
-              300: '{rose.300}',
-              400: '{rose.400}',
-              500: '{rose.500}',
-              600: '{rose.600}',
-              700: '{rose.700}',
-              800: '{rose.800}',
-              900: '{rose.900}',
-              950: '{rose.950}',
+              50: '{yellow.50}',
+              100: '{yellow.100}',
+              200: '{yellow.200}',
+              300: '{yellow.300}',
+              400: '{yellow.400}',
+              500: '{yellow.500}',
+              600: '{yellow.600}',
+              700: '{yellow.700}',
+              800: '{yellow.800}',
+              900: '{yellow.900}',
+              950: '{yellow.950}',
             },
             secondary: {
               50: '{slate.50}',

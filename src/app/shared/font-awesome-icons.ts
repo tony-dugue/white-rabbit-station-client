@@ -1,3 +1,5 @@
-import { faAirbnb, IconDefinition } from '@fortawesome/free-brands-svg-icons';
+import { faUser,  faSearch, faBars, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
-export const fontAwesomeIcons: IconDefinition[] = [faAirbnb];
+export const fontAwesomeIcons: IconDefinition[] = [
+  faUser, faBars, faSearch
+];
