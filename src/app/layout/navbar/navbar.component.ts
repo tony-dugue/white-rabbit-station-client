@@ -8,10 +8,11 @@ import { DialogService } from 'primeng/dynamicdialog';
 import { MenuItem } from 'primeng/api';
 import { SearchComponent } from './search/search.component';
 import { WhiteRabbitLogoComponent } from '../../shared/icon-svg/white-rabbit-logo.component';
+import { CategoryComponent } from "./category/category.component";
 
 @Component({
   selector: 'app-navbar',
-  imports: [ButtonModule, FontAwesomeModule, ToolbarModule, MenuModule, AvatarComponent, SearchComponent, WhiteRabbitLogoComponent],
+  imports: [ButtonModule, FontAwesomeModule, ToolbarModule, MenuModule, AvatarComponent, SearchComponent, WhiteRabbitLogoComponent, CategoryComponent],
   providers: [DialogService],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
