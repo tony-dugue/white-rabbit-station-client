@@ -1,5 +1,5 @@
-import { faUser,  faSearch, faBars, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faUser,  faSearch, faBars, IconDefinition, faCircle } from '@fortawesome/free-solid-svg-icons';
 
 export const fontAwesomeIcons: IconDefinition[] = [
-  faUser, faBars, faSearch
+  faUser, faBars, faSearch, faCircle
 ];
