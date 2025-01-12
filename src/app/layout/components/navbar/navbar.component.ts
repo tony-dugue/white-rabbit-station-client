@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { AvatarComponent } from './avatar/avatar.component';
+import { AvatarComponent } from '../avatar/avatar.component';
 import { ToolbarModule } from 'primeng/toolbar';
 import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DialogService } from 'primeng/dynamicdialog';
 import { MenuItem } from 'primeng/api';
-import { SearchComponent } from './search/search.component';
-import { WhiteRabbitLogoComponent } from '../../shared/icon-svg/white-rabbit-logo.component';
-import { CategoryComponent } from "./category/category.component";
+import { SearchComponent } from '../search/search.component';
+import { CategoryComponent } from "../category/category.component";
+import { WhiteRabbitLogoComponent } from '../../../shared/icon-svg/white-rabbit-logo.component';
 
 @Component({
   selector: 'app-navbar',

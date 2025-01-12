@@ -7,8 +7,8 @@ import {
 import { fontAwesomeIcons } from './shared/font-awesome-icons';
 
 import { ButtonModule } from 'primeng/button';
-import { NavbarComponent } from './layout/navbar/navbar.component';
-import { FooterComponent } from './layout/footer/footer.component';
+import { FooterComponent } from './layout/components/footer/footer.component';
+import { NavbarComponent } from './layout/components/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
