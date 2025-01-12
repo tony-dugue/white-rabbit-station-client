@@ -1,16 +1,18 @@
-<div class="p-toolbar-group-center bg-white rounded-3xl p-0 border border-yellow-500 shadow-sm hover:shadow-md middle-group search flex justify-around items-center cursor-pointer">
-  <button class="p-button rounded-l-3xl border-none bg-white font-medium focus:shadow-none pl-2">
-    {{genres}}
-  </button>
+<div
+  class="p-toolbar-group-center bg-white rounded-3xl p-0 border border-yellow-500 shadow-sm hover:shadow-md middle-group search flex justify-around items-center cursor-pointer"
+>
+  <p
+    class="rounded-l-3xl border-none bg-white font-medium focus:shadow-none pl-2"
+  >
+    {{ genres }}
+  </p>
   <div class="border border-l-0 border-yellow-500 separator"></div>
-  <button class="p-button border-none rounded-none bg-white focus:shadow-none">
-    {{dates}}
-  </button>
+  <p class="border-none rounded-none bg-white focus:shadow-none">{{ dates }}</p>
   <div class="border border-l-0 border-yellow-500 separator"></div>
-  <button class="p-button btn-final border-none rounded-r-3xl bg-white focus:shadow-none">
-    <div>{{location}}</div>
-  </button>
-  <button class="p-button search-icon bg-yellow-500 border-yellow-500 flex items-center justify-center">
+  <p class="btn-final border-none rounded-r-3xl bg-white focus:shadow-none">
+    {{ location }}
+  </p>
+  <span class="search-icon bg-yellow-500 border-yellow-500 flex items-center justify-center">
     <fa-icon [icon]="'search'" class="text-sm"></fa-icon>
-  </button>
+  </span>
 </div>

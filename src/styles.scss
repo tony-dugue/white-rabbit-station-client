@@ -1,7 +1,7 @@
 @use "assets/scss/wrs-fonts" as *;
 @use "assets/scss/wrs-variables" as *;
 
-@layer reset, tailwind-base, primeng, tailwind-utilities;
+@layer reset, primeng, tailwind-base, tailwind-utilities;
 
 @layer tailwind-base {
   @tailwind base;
@@ -28,6 +28,10 @@
   .p-dialog-content {
     border-radius: 0 0 $dialogBorderRadius $dialogBorderRadius;
     padding: 0;
+  }
+
+  .p-toast-close-icon {
+    color: $textColor;
   }
 
   .p-button:focus {

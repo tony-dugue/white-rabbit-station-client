@@ -1,9 +1,14 @@
 <div class="sticky top-0 border-b border-gray-200 shadow-sm z-1">
   <p-toolbar>
     <ng-template #start>
-      <div class="p-toolbar-group-start pl-1 sm:hidden md:flex cursor-pointer items-center" routerLink="/">
+      <div
+        class="p-toolbar-group-start pl-1 sm:hidden md:flex cursor-pointer items-center"
+        routerLink="/"
+      >
         <app-white-rabbit-logo />
-        <div class="font-bold text-yellow-500 pt-3 pl-2 text-xl">White Rabbit Station</div>
+        <div class="font-bold text-yellow-500 pt-3 pl-2 text-xl">
+          White Rabbit Station
+        </div>
       </div>
     </ng-template>
 
@@ -13,9 +18,17 @@
 
     <ng-template #end>
       <div class="p-toolbar-group-end sm:hidden md:flex items-center">
-        <a class="p-button p-button-link mr-3">Ma collection</a>
-        <p-menu #menu [model]="currentMenuItems" [popup]="true" class="rounded-xl mt-1"></p-menu>
-        <button (click)="menu.toggle($event)" class="menu flex items-center justify-around mx-3 pl-3 p-2 border border-yellow-500 focus:shadow-none hover:shadow-sm rounded-3xl bg-white p-button">
+        <a class="font-bold mr-3">Ma collection</a>
+        <p-menu
+          #menu
+          [model]="currentMenuItems"
+          [popup]="true"
+          class="rounded-xl mt-1"
+        ></p-menu>
+        <button
+          (click)="menu.toggle($event)"
+          class="menu flex items-center justify-around mx-3 pl-3 p-2 border border-yellow-500 focus:shadow-none hover:shadow-sm rounded-3xl bg-white"
+        >
           <fa-icon [icon]="'bars'" class="text-sm mr-3"></fa-icon>
           <app-avatar avatarSize="avatar-sm"></app-avatar>
         </button>
