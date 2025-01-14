@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate-api": "ng-openapi-gen --input ./src/open-api/openapi.json --output ./src/app/services"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
     "@primeng/themes": "^19.0.2",
+    "ng-openapi-gen": "^0.52.0",
     "primeng": "^19.0.2",
     "rxjs": "~7.8.0",
     "tailwindcss-primeui": "^0.3.4",
