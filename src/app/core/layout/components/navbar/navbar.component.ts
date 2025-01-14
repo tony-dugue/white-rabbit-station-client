@@ -8,8 +8,8 @@ import { DialogService } from 'primeng/dynamicdialog';
 import { MenuItem } from 'primeng/api';
 import { SearchComponent } from '../search/search.component';
 import { CategoryComponent } from '../category/category.component';
-import { WhiteRabbitLogoComponent } from '../../../shared/icon-svg/white-rabbit-logo.component';
 import { ToastService } from '../../services/toast.service';
+import { WhiteRabbitLogoComponent } from '../../../../shared/icon-svg/white-rabbit-logo.component';
 
 @Component({
   selector: 'app-navbar',
@@ -34,11 +34,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.fetchMenu();
-    this.toastService.send({
-      severity: 'success',
-      summary: 'Welcome to the application!',
-      life: 30000,
-    });
   }
 
   private fetchMenu() {

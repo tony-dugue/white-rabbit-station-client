@@ -2,29 +2,27 @@ import { Injectable } from '@angular/core';
 import { Category, CategoryName } from '../models/category.model';
 import { BehaviorSubject } from 'rxjs';
 
-import { GenreDiscoIconComponent } from '../../shared/icon-svg/genre-disco-icon.component';
-import { GenreRockIconComponent } from '../../shared/icon-svg/genre-rock-icon.component';
-import { GenreJazzIconComponent } from '../../shared/icon-svg/genre-jazz-icon.component';
-import { GenreHardRockIconComponent } from '../../shared/icon-svg/genre-hard-rock-icon.component';
-import { GenreIndieRockIconComponent } from '../../shared/icon-svg/genre-indie-rock-icon.component';
-import { GenreBluesIconComponent } from '../../shared/icon-svg/genre-blues-icon.component';
-import { GenrePunkIconComponent } from '../../shared/icon-svg/genre-punk-icon.component';
-import { GenreMetalIconComponent } from '../../shared/icon-svg/genre-metal-icon.component';
-import { GenreAlternatifIconComponent } from '../../shared/icon-svg/genre-alternatif-icon.component';
-import { GenreCountryIconComponent } from '../../shared/icon-svg/genre-country-icon.component';
-import { GenreRnbIconComponent } from '../../shared/icon-svg/genre-rnb-icon.component';
-import { GenreVarietesIconComponent } from '../../shared/icon-svg/genre-varietes-icon.component';
-import { GenreFunkIconComponent } from '../../shared/icon-svg/genre-funk-icon.component';
-import { GenreRapIconComponent } from '../../shared/icon-svg/genre-rap-icon.component';
-import { GenreSoulIconComponent } from '../../shared/icon-svg/genre-soul-icon.component';
-import { GenreSoundtrackIconComponent } from '../../shared/icon-svg/genre-soundtrack-icon.component';
-import { GenreMusiqueMondeIconComponent } from '../../shared/icon-svg/genre-musique-monde-icon.component';
-import { GenrePopRetroIconComponent } from '../../shared/icon-svg/genre-pop-retro-icon.component';
-import { GenreClassiqueIconComponent } from '../../shared/icon-svg/genre-classique-icon.component';
-import { GenrePopIconComponent } from '../../shared/icon-svg/genre-pop-icon.component';
-import { GenreElectroIconComponent } from '../../shared/icon-svg/genre-electro-icon.component';
-
-
+import { GenreDiscoIconComponent } from '../../../shared/icon-svg/genre-disco-icon.component';
+import { GenreRockIconComponent } from '../../../shared/icon-svg/genre-rock-icon.component';
+import { GenreJazzIconComponent } from '../../../shared/icon-svg/genre-jazz-icon.component';
+import { GenreHardRockIconComponent } from '../../../shared/icon-svg/genre-hard-rock-icon.component';
+import { GenreIndieRockIconComponent } from '../../../shared/icon-svg/genre-indie-rock-icon.component';
+import { GenreBluesIconComponent } from '../../../shared/icon-svg/genre-blues-icon.component';
+import { GenrePunkIconComponent } from '../../../shared/icon-svg/genre-punk-icon.component';
+import { GenreMetalIconComponent } from '../../../shared/icon-svg/genre-metal-icon.component';
+import { GenreAlternatifIconComponent } from '../../../shared/icon-svg/genre-alternatif-icon.component';
+import { GenreCountryIconComponent } from '../../../shared/icon-svg/genre-country-icon.component';
+import { GenreRnbIconComponent } from '../../../shared/icon-svg/genre-rnb-icon.component';
+import { GenreVarietesIconComponent } from '../../../shared/icon-svg/genre-varietes-icon.component';
+import { GenreFunkIconComponent } from '../../../shared/icon-svg/genre-funk-icon.component';
+import { GenreRapIconComponent } from '../../../shared/icon-svg/genre-rap-icon.component';
+import { GenreSoulIconComponent } from '../../../shared/icon-svg/genre-soul-icon.component';
+import { GenreSoundtrackIconComponent } from '../../../shared/icon-svg/genre-soundtrack-icon.component';
+import { GenreMusiqueMondeIconComponent } from '../../../shared/icon-svg/genre-musique-monde-icon.component';
+import { GenrePopRetroIconComponent } from '../../../shared/icon-svg/genre-pop-retro-icon.component';
+import { GenreClassiqueIconComponent } from '../../../shared/icon-svg/genre-classique-icon.component';
+import { GenrePopIconComponent } from '../../../shared/icon-svg/genre-pop-icon.component';
+import { GenreElectroIconComponent } from '../../../shared/icon-svg/genre-electro-icon.component';
 
 @Injectable({
   providedIn: 'root',

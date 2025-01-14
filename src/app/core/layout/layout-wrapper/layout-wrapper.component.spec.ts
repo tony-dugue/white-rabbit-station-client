@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchComponent } from './search.component';
+import { LayoutWrapperComponent } from './layout-wrapper.component';
 
-describe('SearchComponent', () => {
-  let component: SearchComponent;
-  let fixture: ComponentFixture<SearchComponent>;
+describe('LayoutWrapperComponent', () => {
+  let component: LayoutWrapperComponent;
+  let fixture: ComponentFixture<LayoutWrapperComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SearchComponent]
+      imports: [LayoutWrapperComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SearchComponent);
+    fixture = TestBed.createComponent(LayoutWrapperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
