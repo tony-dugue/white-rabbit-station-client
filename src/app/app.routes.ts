@@ -10,4 +10,3 @@ export const routes: Routes = [
   { path: '', redirectTo: 'accueil', pathMatch: 'full' },
   //{ path: '**', component: NoFoundComponent },
 ];
-

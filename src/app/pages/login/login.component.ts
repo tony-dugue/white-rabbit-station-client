@@ -46,7 +46,7 @@ export class LoginComponent {
         this.toastService.send({
           severity: 'success',
           detail: 'Vous êtes maintenant connecté !',
-          summary: "Bienvenue",
+          summary: 'Bienvenue',
         });
       },
       error: (err) => {

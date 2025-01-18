@@ -1,1 +1,100 @@
-<p>register works!</p>
+<div class="flex flex-col min-h-screen">
+  <!-- Main content -->
+  <main class="flex-grow flex justify-center items-center">
+    <p-card header="Créer un compte" [style]="{ width: '400px' }">
+      <form #loginForm="ngForm" (ngSubmit)="onRegister()">
+        <div class="py-5">
+          <label for="firstname" class="font-bold">Prénom</label>
+          <input
+            type="text"
+            pInputText
+            class="w-full"
+            id="firstname"
+            name="firstname"
+            required
+            #firstname="ngModel"
+            [(ngModel)]="registerRequest.firstname"
+          />
+          @if(firstname.invalid && (lastname.dirty || lastname.touched)){
+          <small class="p-error">
+            @if(firstname.hasError('required')) {
+            <span>Le champs prénom est requis</span>
+            }
+          </small>
+          }
+        </div>
+
+        <div class="py-5">
+          <label for="lastname" class="font-bold">Nom</label>
+          <input
+            type="text"
+            pInputText
+            class="w-full"
+            id="lastname"
+            name="lastname"
+            required
+            #lastname="ngModel"
+            [(ngModel)]="registerRequest.lastname"
+          />
+          @if(lastname.invalid && (lastname.dirty || lastname.touched)){
+          <small class="p-error">
+            @if(lastname.hasError('required')) {
+            <span>Le champs nom est requis</span>
+            }
+          </small>
+          }
+        </div>
+
+        <div class="py-5">
+          <label for="email" class="font-bold">Adresse e-mail</label>
+          <input
+            type="text"
+            pInputText
+            class="w-full"
+            id="email"
+            name="email"
+            required
+            #email="ngModel"
+            [(ngModel)]="registerRequest.email"
+            pattern="[a-z0-9\._%\+\-]+@[a-z0-9\.\-]+\.[a-z]{2,}$"
+          />
+          @if(email.invalid && (email.dirty || email.touched)){
+          <small class="p-error">
+            @if(email.hasError('required')) {
+            <span>Un email est obligatoire</span>
+            } @else if(email.hasError('pattern')) {
+            <span>Votre adresse e-mail est requise</span>
+            }
+          </small>
+          }
+        </div>
+
+        <div class="py-5">
+          <label for="password" class="font-bold">Mot de passe</label>
+          <p-password
+            [(ngModel)]="registerRequest.password"
+            [feedback]="false"
+            [toggleMask]="true"
+            inputId="password"
+            name="password"
+            #password="ngModel"
+            inputStyleClass="w-full"
+            styleClass="w-full"
+            required
+          />
+          @if(password.invalid && (password.dirty || password.touched)) {
+          <small class="p-error"> Le mot de passe est requis </small>
+          }
+        </div>
+        <p-button label="Envoyer" styleClass="w-full mt-5" type="submit" />
+        <div class="mt-10">
+          <span class="pr-2">Vous avez déjà un compte :</span>
+          <a class="text-yellow-500" routerLink="/connexion">S'inscrire</a>
+        </div>
+      </form>
+    </p-card>
+  </main>
+
+  <!-- Footer -->
+  <app-footer class="mt-auto" />
+</div>
