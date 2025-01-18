@@ -38,8 +38,8 @@ export class NavbarComponent implements OnInit {
 
   private fetchMenu() {
     return (this.currentMenuItems = [
-      { label: 'Se connecter', styleClass: 'font-bold' },
-      { label: 'Créer un compte' },
+      { label: 'Connexion', styleClass: 'font-bold', routerLink: '/connexion' },
+      { label: 'Inscription', routerLink: '/creation-compte' },
     ]);
   }
 }

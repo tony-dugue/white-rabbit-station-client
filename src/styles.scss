@@ -63,6 +63,10 @@
     top: 46%;
   }
 
+  .p-error {
+    color: $ErrorColor;
+  }
+
   .p-datepicker .p-highlight {
     color: $white;
     background-color: $black;
@@ -83,7 +87,8 @@
   --font-family: $fontFamily !important;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   color: $textColor;
   background-color: $white;
@@ -92,6 +97,9 @@ html, body {
 
 a {
   cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 h1 {
